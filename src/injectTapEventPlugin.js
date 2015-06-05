@@ -3,7 +3,7 @@ module.exports = function injectTapEventPlugin () {
   React.initializeTouchEvents(true);
 
   require('react/lib/EventPluginHub').injection.injectEventPluginsByName({
-    "ResponderEventPlugin": require('./ResponderEventPlugin.js'),
-    "TapEventPlugin":       require('./TapEventPlugin.js')
+    "ResponderEventPlugin": require('./ResponderEventPlugin'),
+    "TapEventPlugin":       require('./TapEventPlugin')
   });
 };
